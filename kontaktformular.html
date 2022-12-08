@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <title>
+            Technische Realschule Kaltenthal
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+
+
+        <body>
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+                <nav class="uk-navbar-container uk-flex-column uk-flex-top" data-uk-navbar data-uk-toggle="media: @s; cls: uk-flex-row uk-flex-top; mode: media">
+                    <button type="button" data-uk-toggle="target: .navbar-collapse; cls: hidden-up-to-s" class="uk-navbar-toggle uk-hidden@s" data-uk-navbar-toggle-icon></button>
+                    <div class="navbar-collapse hidden-up-to-s">
+                        <div class="uk-navbar-left">
+                            <ul data-uk-toggle="media: @s; cls: uk-navbar-nav uk-padding-remove; mode: media" class="uk-nav uk-nav-primary uk-padding-small">
+                                <li><a href="index.html#aktionen">Aktuelles</a></li>
+                                <li><a href="index.html#fachbereiche">Fachbereiche</a></li>
+                                <li><a href="index.html#spendenaufruf">Spenden</a></li>
+                                <li>
+                                    <a href="#kontakt">Kontakt</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="kontaktformular.html">Kontaktformular</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Schulleben</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="projekteags.html">Projekte und AGs</a></li>
+                                            <li><a href="#">Menüplan Mensa</a></li>
+                                            <li><a href="#">Schulvorstand</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="uk-section uk-section-default">
+                <div class="uk-container">
+                    <form>
+                        <fieldset class="uk-fieldset">
+                            <legend class="uk-legend">Kontakt</legend>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="Betreff">
+                            </div>
+                            <div class="uk-margin">
+                                <textarea class="uk-textarea" rows="7" placeholder="Inhalt"></textarea>
+                            </div>
+                            <div class="uk-margin">
+                                <button class="uk-button uk-button-default">Abschicken</button>
+                            </div>                    
+                        </fieldset>
+                    </form> 
+                </div>
+            </div>
+            <div class="uk-section uk-section-primary">
+                <div class=" uk-container">
+                   <div uk-grid>
+                      <div class="uk-width-expand@m">
+                            <h4 id="kontakt">Kontakt</h4>
+                            <p><span class="uk-margin-small-right" uk-icon="home"></span>Dorfstraße 3<br>12345 Kaltenthal</p>
+                            <p><span class="uk-margin-small-right" uk-icon="receiver"></span>+49 5638866</p>
+                            <p><span class="uk-margin-small-right" uk-icon="mail"></span>Realschule@Kaltenthal.de</p>
+                            <p><span class="uk-margin-small-right" uk-icon="info"></span><a href="impressum.html" uk-tooltip="Impressum">Impressum</a></p>
+                      </div>
+                      <div class="uk-width-1-3@m">
+                        <h4>Öffnungszeiten des Büros</h4>
+                        <p>Montag-Freitag:<br>07:30-13:30 Uhr</p>
+                        <h4>Soziale Medien</h4>
+                        <div class="uk-grid-divider uk-child-width-1-3@s uk-text-center uk-text-secondary" uk-grid>
+                        <div>
+                            <a href="https://www.hs-osnabrueck.de/" class="uk-icon-button uk-text-secondary" uk-icon="twitter" uk-tooltip="Twitter"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.hs-osnabrueck.de/" class="uk-icon-button uk-text-secondary" uk-icon="facebook" uk-tooltip="Facebook"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.hs-osnabrueck.de/" class="uk-icon-button uk-text-secondary" uk-icon="youtube" uk-tooltip="YouTube"></a>
+                        </div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+        </body>
+</html>
